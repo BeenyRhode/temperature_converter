@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41CACACA"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/scaleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/inputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scaleSpinner"
+        android:text="Enter Temperature:"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/temperatureInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLabel"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureInput"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"
+        android:width="200dp"
+        android:layout_marginTop="32dp"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/outputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:layout_below="@id/convertButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/convertedOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="65dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>
+
